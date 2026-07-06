@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:apmgroups.in)",
+      "WebFetch(domain:www.apmgroups.in)",
+      "PowerShell(Head-Object *)",
+      "PowerShell(npm list *)",
+      "Bash(npx tsc *)",
+      "Bash(node -e \"console.log\\(require\\('./node_modules/next/package.json'\\).version\\)\")",
+      "PowerShell(Invoke-WebRequest -Uri \"https://apmgroups.in/img/Layoutimg/apm-logo-1.png\" -OutFile \"D:\\\\apm2\\\\apm2\\\\src\\\\app\\\\icon.png\" -UseBasicParsing; Write-Host \"Downloaded OK, size: $\\(\\(Get-Item 'D:\\\\apm2\\\\apm2\\\\src\\\\app\\\\icon.png'\\).Length\\) bytes\")",
+      "PowerShell(try { Invoke-WebRequest -Uri \"https://apmgroups.in/favicon.ico\" -OutFile \"C:\\\\Users\\\\samoh\\\\AppData\\\\Local\\\\Temp\\\\apm-fav-test.ico\" -UseBasicParsing; Write-Host \"favicon.ico exists, size: $\\(\\(Get-Item 'C:\\\\Users\\\\samoh\\\\AppData\\\\Local\\\\Temp\\\\apm-fav-test.ico'\\).Length\\) bytes\" } catch { Write-Host \"No favicon.ico\" })",
+      "Bash(claude *)"
+    ]
+  }
+}
